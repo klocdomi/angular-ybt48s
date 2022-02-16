@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [
@@ -13,12 +14,14 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: WelcomeComponent },
+      { path: 'about', component: AboutComponent}
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     WelcomeComponent,
+    AboutComponent,
   ],
   bootstrap: [
     AppComponent
