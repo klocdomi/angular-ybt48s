@@ -1,4 +1,15 @@
+body {
+  height: 100%;
+  margin: 0;
+}
 
+footer {
+  background-color: #ebeaf3;
+  height: 50px;
+  padding: 5px;  
+  text-align: center;
+  margin-top: -50px;
+}
 
 
 /*
