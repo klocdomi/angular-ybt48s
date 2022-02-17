@@ -5,11 +5,22 @@ body {
 
 footer {
   background-color: #ebeaf3;
-  height: 50px;
-  padding: 5px;  
-  text-align: center;
+  padding: 5px;
   margin-top: -50px;
+  position: relative;
+  align-items: center;
+  text-align: right;
 }
+
+.col {
+  padding-right: 3px;
+}
+
+footer p {
+  text-align: left;
+}
+
+
 
 
 /*
