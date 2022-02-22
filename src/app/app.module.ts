@@ -17,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     RouterModule.forRoot([
       { path: '', component: WelcomeComponent },
       { path: 'about', component: AboutComponent}
-    ])
+    ],
+    {scrollPositionRestoration: 'enabled'} )
   ],
   declarations: [
     AppComponent,

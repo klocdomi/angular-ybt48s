@@ -1,23 +1,35 @@
 body {
-  height: 100%;
   margin: 0;
+  padding-top: 68px;
 }
 
 footer {
   background-color: #ebeaf3;
   padding: 5px;
-  margin-top: -50px;
-  position: relative;
-  align-items: center;
+  margin-top: -27px;
   text-align: right;
 }
 
-.col {
+footer .col {
   padding-right: 3px;
+  height: 1em;
 }
 
 footer p {
   text-align: left;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+}
+
+/* test */
+.content{
+  height: 200vh;
 }
 
 
