@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: WelcomeComponent },
+      { path: 'home', component: WelcomeComponent },
       { path: 'about', component: AboutComponent}
     ],
     {scrollPositionRestoration: 'enabled'} )
@@ -25,7 +27,8 @@ import { ContactComponent } from './contact/contact.component';
     TopBarComponent,
     WelcomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MapComponent
   ],
   bootstrap: [
     AppComponent

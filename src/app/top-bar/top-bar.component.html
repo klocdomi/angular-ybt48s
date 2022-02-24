@@ -1,14 +1,14 @@
 
   <nav class="nav__menu sticky top-bar" #stickyMenu [class.sticky]="sticky">
-    <img  class="nav__logo" src="https://w7.pngwing.com/pngs/890/893/png-transparent-pizza-logo-pizza-delivery-italian-cuisine-chef-pizza-icon-logo-design-food-logo-cooking.png" />
+    <img  class="nav__logo" src="../assets/pizzalogo.png" aria-current="page" [routerLink]="['/']" href="#" />
     <ul class="nav__links">
       <li class="nav__item">
         <a class="nav__link" aria-current="page" href="#">Home</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link" href="#">LINK</a>
+        <a class="nav__link" href="#">Menu</a>
       </li>
-      <li class="na__item">
+      <li class="nav__item">
         <a class="nav__link" [routerLink]="['/about']" href="/about">About</a>
       </li>
       <li class="nav__item">
