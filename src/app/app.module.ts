@@ -25,7 +25,7 @@ import { ContactComponent } from './contact/contact.component';
     TopBarComponent,
     WelcomeComponent,
     AboutComponent,
-    ContactComponent,
+    ContactComponent
   ],
   bootstrap: [
     AppComponent

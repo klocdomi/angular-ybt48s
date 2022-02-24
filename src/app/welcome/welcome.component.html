@@ -1,10 +1,67 @@
-
-<h1>
+<div class="container-lg welcome-background">
+  <h1 class="welcome-text">
     Where
   <span class="highlight"> 
-    amazing
+    pizza
   </span>
-    happens! 
+    happens !
 </h1>
+</div>
+
+<div class="container-md">
+<div
+  id="welcome__carousel"
+  class="carousel slide"
+  data-bs-ride="carousel"
+  data-bs-interval="10"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img
+        src="https://salsiccia.pl/wp-content/uploads/2019/10/pizza.png"
+        class="d-block w-100"
+        alt="pizza 1"
+      />
+    </div>
+    <div class="carousel-item active">
+      <img
+        src="https://pyzamadeinpoland.pl/wp-content/uploads/2019/10/pizza-neapolitanska-przepis-22.jpg"
+        class="d-block w-100"
+        alt="pizza 2"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://milopizza.pl/images/menu/napoletana-mlist.jpg"
+        class="d-block w-100"
+        alt="pizza 3"
+        style="object-fit: cover;"
+        width="50%"
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleControls"
+    data-bs-slide="prev"
+    (click)="prevImg()"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleControls"
+    data-bs-slide="next"
+    (click)="nextImg()"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
 
 

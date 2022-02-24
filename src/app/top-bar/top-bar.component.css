@@ -1,16 +1,50 @@
-div {
+nav {
   width: 100%;
-  height: 68px;
-  /* background-color: #1976d2; */
-  background: linear-gradient(to top left, #c9d7e5, #1976d2);
-  padding: 16px;
+  height: 7rem;
+  background: linear-gradient(to top left, #d4a4a4, #b17341);
+  padding: 0 6rem;
   display: flex;
-  flex-direction: row;
   float: right;
   justify-content: space-between;
   align-items: center;
-  margin:0;
-  opacity: 0.9;
+  opacity: 1;
+  z-index: 100;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-primary);
+  color: #222;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  background-color: var(--color-primary-darker);
+  color: #333;
+}
+
+.nav__logo {
+  height: 5rem;
+  transition: all 0.3s;
+  background-color: transparent;
 }
 
 h1 {
@@ -28,6 +62,22 @@ a:hover {
   opacity: 0.8;
 }
 
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/58ac7efb6b8f5b3bdce9a441/1560880713570-SHOGLAISOY3H7Y1S6E7H/Italian+Flag.JPG");
+  background-repeat: no-repeat;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #333;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .sticky{
   position: fixed;
   top: 0;
@@ -36,7 +86,5 @@ a:hover {
   width: 100%;
 }
 
-.content{
-  height: 200vh;
-}
+
 

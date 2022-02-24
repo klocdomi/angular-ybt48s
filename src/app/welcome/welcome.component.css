@@ -1,21 +1,27 @@
-body {
-  background-image: url(  "https://napoletana2.it/wp-content/uploads/2021/11/pizza-1200-min.png");
+.welcome-background {
+  min-height: 1000px;
+  background-image: url("../../assets/pizza-1200-min.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  display: block;
+  position: relative;
+  content: '';
 }
-h1 {
+
+.welcome-text {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 9vw;
+  font-size: 7vw;
   font-size-adjust: initial;
+  color: rgb(8, 29, 29);
   margin: 25px;
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 40%;
   display: block;
   font-weight: bold;
   opacity: 0.99;
-}
-
-img {
-  height: 80%;
+  max-block-size: 4vw;
 }
 
 .highlight {
@@ -33,5 +39,15 @@ img {
   z-index: -1;
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
-  background-image: var(--gradient-primary);
+  background-image: var(--gradient-secondary);
+}
+
+#welcome__carousel {
+  padding-top: 5rem;
+}
+
+#carousel-inner {
+  object-fit: contain;
+  height: 250px;
+  width: 100%;
 }
